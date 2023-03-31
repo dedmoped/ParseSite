@@ -19,6 +19,7 @@ namespace ParseSite
                 ParseExcel parseExcel = new ParseExcel(@"D:\Visual\ParseSite\ParseSite\test1.xlsx");
                 parseExcel.ParseData("Лист1");
                 IWebDriver Browser = new ChromeDriver(@"D:\Visual\test\test\");
+                ///
                 Browser.Navigate().GoToUrl("https://visa.vfsglobal.com/blr/ru/pol/login");
                 StartPage homePage = new StartPage(Browser).InpuntInformation("dedmoped@gmail.com", "Dedtest1");
                 Console.ReadKey();
